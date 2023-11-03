@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html style="background-color: #fff;">
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <thead></thead>
+        <tbody>
+            <!--Global Group related elements in a form-->
+        
+            <fieldset style="margin: 0px;background-color: #a32b2d;">
+                <legend style="background-color: #4270a2;margin-bottom: 10px;">Personal Data</legend>
+            <!--Local Group related elements in a form-->
+                <fieldset style="background-color: #d9a51e;">
+                    <legend style="background-color: #6496eb;height: 70px;display: flex;align-items: center;justify-content: center;font-weight: bolder;font-size: x-small;font-family: Arial, Helvetica, sans-serif;">
+                        YourName
+                    </legend>
+                    <ul style="list-style: none;padding: 0;margin: 0;">
+                        <li>
+                            <label style="font-size: small;display: inline-block;width: 70px; text-align: left;" for="firstName">first name</label>
+                            <label>:</label>
+                            <input type="text" name="fname" placeholder="ex ahmed" minlength="3" maxlength="15" required id="firstname" >
+                        </li>
+                        <li>
+                            <label style="font-size: small;display: inline-block;width: 70px; text-align: left;" for="secondName"> second name</label>
+                            <label>:</label>
+                            <input type="text" name="sname" placeholder="ex bahnasy" minlength="3" maxlength="15" required id="secondName">
+                        </li>
+                    </ul>
+                </fieldset>
+                    <ul style="list-style: none;padding: 0;margin: 0;padding-top: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: small;">
+                        <li>
+                            <label style="font-size: small;display: inline-block;width: 90px; text-align: left;" for="yourPhone">your phone</label>
+                            <label>:</label>
+                            <input type="number" name="yourPhone" minlength="15" maxlength="50" id="yourPhone">
+                        </li>
+                        <li>
+                            <label style="font-size: small;display: inline-block;width: 90px; text-align: left;" for="email">Email</label>
+                            <label>:</label>
+                            <input type="email" name="email" required id="email">
+                        </li>
+                        <li>
+                            <label style="font-size: small;display: inline-block;width: 90px; text-align: left;" for="password">password</label>
+                            <label>:</label>
+                            <input type="password" name="password" required id="password" maxlength="30">
+                        </li>
+                        <li>
+                            <label style="font-size: small;display: inline-block;width: 90px; text-align: left;" for="re-password">re-password</label>
+                            <label>:</label>
+                            <input type="password" name="re-password" required id="re-password" maxlength="30">
+                        </li>
+                    </ul>
+                    <!-- Radio -->
+                    <ul style="list-style: none;padding: 0;margin: 0;padding-top: 50px;font-size: small; ">
+                        <li>
+                            <input type="radio" name="gender" value="male" id="male" >
+                            <label for="male">Male</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="gender" value="female" id="female">
+                            <label for="female">Female</label>
+                        </li>
+                    </ul>
+                    <!--Checkbox-->
+                    <ul style="list-style: none;padding: 0;margin: 0;padding-top: 20px;font-size: small;padding-bottom: 20px; ">
+                        <li>
+                            <input type="checkbox" name="graduated" value="student" id="student">
+                            <label for="student">Student</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="gender" value="graduated" id="graduated">
+                            <label for="graduated">Graduated</label>
+                        </li>
+                    </ul>
+                    <select name="university" style="display: inline-block;width: 100px;">
+                    <option name="AUC" value="AUC">AUC</option>
+                    </select>
+                    <br>
+                    <button type="submit" style="background-color: black;">
+                        <img src="images/submit-button-png-25811.png" alt="Submit" width="40px">
+                    </button> 
+                    <!-- <input type="submit" src="images/submit-button-png-25811.png" alt="Submit" width="50px"> -->
+            </fieldset>
+        </tbody>
+
+    </table>
+    </form>
+</body>
+</html>
