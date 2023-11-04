@@ -1,0 +1,23 @@
+There are 3 ways to do layer :
+1- make a div.layer in HTML & 
+    in CSS  #home .layer {
+                background-color: #00000085;
+                min-height: 100vh;
+            } 
+
+2- In CSS make 
+         background: linear-gradient(to right, #000000c7 ,#000000c7);
+
+
+3- In CSS make  #home:after {
+                    content: "";
+                    background: #000000c7;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    bottom:0;
+                    right:0;
+                    height:100%;
+                    width:100%;
+                    z-index:1;
+                } 
